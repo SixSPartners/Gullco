@@ -274,7 +274,7 @@
     <DataSet Name="PerCon">
       <Query>
         <DataSourceName>dsARForm</DataSourceName>
-        <CommandText>="Select *, T1.ConNum FROM PerCon_" + Parameters!TableGuid.Value + "  T2 LEFT OUTER JOIN CustCnt_" + Parameters!TableGuid.Value + "  T1 ON
+        <CommandText>="Select *, T1.CustNum, T1.ConNum FROM PerCon_" + Parameters!TableGuid.Value + "  T2 LEFT OUTER JOIN CustCnt_" + Parameters!TableGuid.Value + "  T1 ON
  T1.PerConID = T2.PerConID AND T1.Company=T2.Company"</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
@@ -321,6 +321,10 @@
         </Field>
         <Field Name="ConNum">
           <DataField>ConNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CustNum">
+          <DataField>CustNum</DataField>
           <rd:UserDefined>true</rd:UserDefined>
         </Field>
       </Fields>
@@ -822,7 +826,7 @@
                               <TextRuns>
                                 <TextRun>
                                   <Label>PerCon</Label>
-                                  <Value>= Lookup(Fields!Customer_PrimBCon.Value, Fields!ConNum.Value, Fields!EMailAddress.Value, "PerCon")</Value>
+                                  <Value>= Lookup(cstr(Fields!CustNum.Value)+cstr(Fields!Customer_PrimBCon.Value), Cstr(Fields!CustNum.Value)+Cstr(Fields!ConNum.Value), Fields!EMailAddress.Value, "PerCon")</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -1131,14 +1135,14 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="OrderNum_UD_CustAcc_c">
+                        <Textbox Name="Customer_CustID">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OrderNum_UD_CustAcc_c.Value</Value>
+                                  <Value>=Fields!Customer_CustID.Value</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -1149,7 +1153,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>OrderNum_UD_CustAcc_c</rd:DefaultName>
+                          <rd:DefaultName>Customer_CustID</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -2284,11 +2288,6 @@ iif(Fields!Calc_MulShipVia.Value, "See Below", Fields!Calc_ShipVia.Value),"")</V
     <ReportParameter Name="Company">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
-      <DefaultValue>
-        <Values>
-          <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
-        </Values>
-      </DefaultValue>
       <AllowBlank>true</AllowBlank>
       <Prompt>Company</Prompt>
       <UsedInQuery>True</UsedInQuery>
@@ -2296,11 +2295,6 @@ iif(Fields!Calc_MulShipVia.Value, "See Below", Fields!Calc_ShipVia.Value),"")</V
     <ReportParameter Name="InvoiceNum">
       <DataType>Integer</DataType>
       <Nullable>true</Nullable>
-      <DefaultValue>
-        <Values>
-          <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
-        </Values>
-      </DefaultValue>
       <Prompt>InvoiceNum</Prompt>
       <UsedInQuery>True</UsedInQuery>
     </ReportParameter>

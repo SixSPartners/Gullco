@@ -12,7 +12,7 @@
     <DataSet Name="ARForm">
       <Query>
         <DataSourceName>DsARForm</DataSourceName>
-        <CommandText>="SELECT T2.PartNum_IUM, T1.Customer_OrgRegCode, T1.Customer_PrimPCon, T2.PartNum_ISOrigCountry, T2.PartNum_CommodityCode, T2.PartNum_NetWeight, T2.DiscountPercent As InvcDtl_DiscountPercent,  T1.DocInvoiceBal,T2.OrderLine_OrderQty,T1.Calc_CustEMailAddress, T1.CurrencyCode,T1.OrderNum as InvcHead_OrderNum,T1.Customer_CustID,T1.RptLanguageID,T1.Company,T1.CreditMemo,T1.CustNum,T1.DocDepositCredit,T1.DocInvoiceAmt,T1.DocRounding,T1.DocumentPrinted,T1.InvoiceComment,T1.InvoiceDate,T1.InvoiceNum,T1.InvoiceType,T1.LegalNumber,T1.PONum,T1.SoldToInvoiceAddress,T1.Calc_BillToAddressList,T1.Calc_BottomAddress,T1.Calc_CompanyAddressList,T1.Calc_CurrDocDesc,T1.Calc_CurSymbol,T1.Calc_CustContactName,T1.Calc_CustPartOpts,T1.Calc_DteOrdrd,T1.Calc_fFOB,T1.Calc_MulPackNum,T1.Calc_mulponum,T1.Calc_MulShipDate,T1.Calc_MulShipTo,T1.Calc_MulShipVia,T1.Calc_MultSoldTo,T1.Calc_MultTaxID,T1.Calc_NumRecordPerPage,T1.Calc_NumTotalParts,T1.Calc_PackNum,T1.Calc_PrintBottomAddress,T1.Calc_SalesPerson,T1.Calc_SalesTerms,T1.Calc_ShipDate,T1.Calc_ShipToAddressList,T1.Calc_ShipToContactName,T1.Calc_ShipVia,T1.[Calc_Voucher-String] as Calc_Voucher_String,T1.CurrencyCode_CurrencyID,T1.CurrencyCode_DecimalsGeneral,T1.Calc_SEBankRef,T1.Calc_CustResaleID,T1.BranchID,T1.CustAgentTaxRegNo,T1.CHISRCodeLine,T1.Calc_CHBankAcctIBANCode,T1.Calc_CHBankAcctISRPartyID, T1.Customer_FederalID, T1.Customer_PrimBCon, T1.Customer_PrimPCon, T2.AdvanceBillCredit,T2.Company as InvcDtl_Company,T2.DocAdvanceBillCredit,T2.DocDiscount,T2.DocUnitPrice,T2.InvoiceComment as InvcDtl_InvoiceComment,T2.InvoiceLine,T2.InvoiceNum as InvcDtl_InvoiceNum,T2.PackLine,T2.PackNum,T2.DropShipPackSlip,T2.PartNum,T2.POLine,T2.PricePerCode,T2.RevisionNum,T2.SalesUM,T2.SellingOrderQty,T2.SellingShipQty,T2.ShipDate,T2.XPartNum,T2.XRevisionNum,T2.Calc_ActDate,T2.Calc_BackOrdQty,T2.Calc_UnitPrice,T2.Calc_ExtPrice,T2.Calc_Duration,T2.Calc_GetNextLegalNum,T2.Calc_InvcComment,T2.Calc_InvoiceDisplayLine,T2.Calc_IsKitParent,T2.Calc_JobNumber,T2.Calc_LabDur,T2.Calc_LabMod,T2.Calc_Labor,T2.Calc_LineDesc,T2.Calc_LineSoldToAddressList,T2.Calc_MatDur,T2.Calc_Mate,T2.Calc_MatMod,T2.Calc_Misc,T2.Calc_MiscDur,T2.Calc_MiscMod,T2.Calc_Modifier,T2.Calc_NextLegalNumID,T2.Calc_NumLineByInv,T2.Calc_ponum,T2.Calc_PSLegalNum,T2.Calc_Reference,T2.Calc_SerialNumber,T2.Calc_ShipToAddressList as InvcDtl_Calc_ShipToAddressList,T2.Calc_ShipToContactName as InvcDtl_Calc_ShipToContactName,T2.Calc_ShipToShipVia,T2.Calc_StateTaxID,T2.Calc_WarrDesc,T2.Calc_WhseCode,T2.OrderLine_DisplaySeq,T2.OrderLine_KitFlag,T2.OrderLine_KitPrintCompsInv,T2.OrderLine_KitsLoaded,T2.OrderLine_OrderLine,T2.PartNum_PartDescription, T2.SellingShipQty, T3.CallComment,T3.CallQty,T3.PartNum as FSCallDt_PartNum,T3.RevisionNum as FSCallDt_RevisionNum,T3.XPartNum as FSCallDt_XPartNum,T3.XRevisionNum as FSCallDt_XRevisionNum,T3.Calc_CProb,T3.Calc_fCallLine,T3.Calc_fCallNum,T3.Calc_InvoiceLine,T3.Calc_InvoiceNum, T4.Calc_InvoiceNum as FSCallMt_Calc_InvoiceNum,T4.Calc_MatNum,T4.Calc_MtPaNum,T4.Calc_MtQty,T4.Calc_MtBillPrice,T4.Calc_MtExtPrice,T4.Calc_MtLinedesc,T4.Calc_MtRevNum,T4.ResReasonCode,T5.RptLanguageID as Label_RptLanguageID,T5.Calc_ActDate  as Label_Calc_ActDate,T5.Calc_CreditMemo as Label_Calc_CreditMemo,T5.Calc_Duration as Label_Calc_Duration,T5.Calc_JobNumber as Label_Calc_JobNumber,T5.Calc_LabDur as Label_Calc_LabDur,T5.Calc_Labor as Label_Calc_Labor,T5.Calc_MatDur as Label_Calc_MatDur,T5.RptLiteralsLMaterial as Label_Calc_Mate,T5.Calc_Misc as Label_Calc_Misc,T5.Calc_MiscDur as Label_Calc_MiscDur,T5.Calc_MtExtPrice as Label_Calc_MtExtPrice,T5.Calc_SerialNumber as Label_Calc_SerialNumber,T5.DepositCredit as Label_DepositCredit,T5.DocUnitPrice as Label_DocUnitPrice,T5.InvoiceLine as Label_InvoiceLine,T5.PONum as Label_PONum,T5.ProbReasonCode as Label_ProbReasonCode,T5.Reference as Label_Reference,T5.RptLiteralsLBckOrd,T5.RptLiteralsLBillTo ,T5.RptLiteralsLComeFrom ,T5.RptLiteralsLContinueInNext ,T5.RptLiteralsLCusPart ,T5.RptLiteralsLDate ,T5.RptLiteralsLEMaila ,T5.RptLiteralsLExtPrice ,T5.RptLiteralsLFax ,T5.RptLiteralsLFOB ,T5.RptLiteralsLHdng ,T5.RptLiteralsLInvoice ,T5.RptLiteralsLLegNum ,T5.RptLiteralsLLine ,T5.RptLiteralsLLineRef ,T5.RptLiteralsLof ,T5.RptLiteralsLOurPart ,T5.RptLiteralsLPackSlp ,T5.RptLiteralsLPage ,T5.RptLiteralsLPartDesc ,T5.RptLiteralsLPartRev  ,T5.RptLiteralsLPhone ,T5.RptLiteralsLPONum ,T5.RptLiteralsLQty ,T5.RptLiteralsLQtyOrd ,T5.RptLiteralsLRev ,T5.RptLiteralsLRounding ,T5.RptLiteralsLSalesKit ,T5.RptLiteralsLSeeBelow ,T5.RptLiteralsLShipTo ,T5.RptLiteralsLShpVia ,T5.RptLiteralsLSlsTxID ,T5.RptLiteralsLSoldToL ,T5.RptLiteralsLTotal ,T5.RptLiteralsLWarrantyA ,T5.RptLiteralsLWHCode ,T5.ShipDate as Label_ShipDate,T5.UnitPrice as Label_UnitPrice,T5.RptLiteralsLAUHdng ,T5.RptLiteralsLAUTxID ,T5.RptLiteralsLSEOCR ,T5.RptLiteralsLTHServiceTax ,T5.RptLiteralsLTHCopy ,T5.RptLiteralsLNOKID ,T5.RptLiteralsLDiscountPercent ,T5.RptLiteralsLVatNr ,T5.RptLiteralsLTHBranch ,T5.RptLiteralsLTHBranchID ,T5.RptLiteralsLTHHeadOffice ,T5.RptLiteralsLTHTaxPayerNo, T5.RptLiteralsLlessAdvBill
+        <CommandText>="SELECT T2.PackNum_ShipComment, T2.PartNum_IUM, T1.Customer_OrgRegCode, T1.Customer_PrimPCon, T2.PartNum_ISOrigCountry, T2.PartNum_CommodityCode, T2.PartNum_NetWeight, T2.DiscountPercent As InvcDtl_DiscountPercent,  T1.DocInvoiceBal,T2.OrderLine_OrderQty,T1.Calc_CustEMailAddress, T1.CurrencyCode,T1.OrderNum as InvcHead_OrderNum,T1.Customer_CustID,T1.RptLanguageID,T1.Company,T1.CreditMemo,T1.CustNum,T1.DocDepositCredit,T1.DocInvoiceAmt,T1.DocRounding,T1.DocumentPrinted,T1.InvoiceComment,T1.InvoiceDate,T1.InvoiceNum,T1.InvoiceType,T1.LegalNumber,T1.PONum,T1.SoldToInvoiceAddress,T1.Calc_BillToAddressList,T1.Calc_BottomAddress,T1.Calc_CompanyAddressList,T1.Calc_CurrDocDesc,T1.Calc_CurSymbol,T1.Calc_CustContactName,T1.Calc_CustPartOpts,T1.Calc_DteOrdrd,T1.Calc_fFOB,T1.Calc_MulPackNum,T1.Calc_mulponum,T1.Calc_MulShipDate,T1.Calc_MulShipTo,T1.Calc_MulShipVia,T1.Calc_MultSoldTo,T1.Calc_MultTaxID,T1.Calc_NumRecordPerPage,T1.Calc_NumTotalParts,T1.Calc_PackNum,T1.Calc_PrintBottomAddress,T1.Calc_SalesPerson,T1.Calc_SalesTerms,T1.Calc_ShipDate,T1.Calc_ShipToAddressList,T1.Calc_ShipToContactName,T1.Calc_ShipVia,T1.[Calc_Voucher-String] as Calc_Voucher_String,T1.CurrencyCode_CurrencyID,T1.CurrencyCode_DecimalsGeneral,T1.Calc_SEBankRef,T1.Calc_CustResaleID,T1.BranchID,T1.CustAgentTaxRegNo,T1.CHISRCodeLine,T1.Calc_CHBankAcctIBANCode,T1.Calc_CHBankAcctISRPartyID, T1.Customer_FederalID, T1.Customer_PrimBCon, T1.Customer_PrimPCon, T2.AdvanceBillCredit,T2.Company as InvcDtl_Company,T2.DocAdvanceBillCredit,T2.DocDiscount,T2.DocUnitPrice,T2.InvoiceComment as InvcDtl_InvoiceComment,T2.InvoiceLine,T2.InvoiceNum as InvcDtl_InvoiceNum,T2.PackLine,T2.PackNum,T2.DropShipPackSlip,T2.PartNum,T2.POLine,T2.PricePerCode,T2.RevisionNum,T2.SalesUM,T2.SellingOrderQty,T2.SellingShipQty,T2.ShipDate,T2.XPartNum,T2.XRevisionNum,T2.Calc_ActDate,T2.Calc_BackOrdQty,T2.Calc_UnitPrice,T2.Calc_ExtPrice,T2.Calc_Duration,T2.Calc_GetNextLegalNum,T2.Calc_InvcComment,T2.Calc_InvoiceDisplayLine,T2.Calc_IsKitParent,T2.Calc_JobNumber,T2.Calc_LabDur,T2.Calc_LabMod,T2.Calc_Labor,T2.Calc_LineDesc,T2.Calc_LineSoldToAddressList,T2.Calc_MatDur,T2.Calc_Mate,T2.Calc_MatMod,T2.Calc_Misc,T2.Calc_MiscDur,T2.Calc_MiscMod,T2.Calc_Modifier,T2.Calc_NextLegalNumID,T2.Calc_NumLineByInv,T2.Calc_ponum,T2.Calc_PSLegalNum,T2.Calc_Reference,T2.Calc_SerialNumber,T2.Calc_ShipToAddressList as InvcDtl_Calc_ShipToAddressList,T2.Calc_ShipToContactName as InvcDtl_Calc_ShipToContactName,T2.Calc_ShipToShipVia,T2.Calc_StateTaxID,T2.Calc_WarrDesc,T2.Calc_WhseCode,T2.OrderLine_DisplaySeq,T2.OrderLine_KitFlag,T2.OrderLine_KitPrintCompsInv,T2.OrderLine_KitsLoaded,T2.OrderLine_OrderLine,T2.PartNum_PartDescription, T2.SellingShipQty, T3.CallComment,T3.CallQty,T3.PartNum as FSCallDt_PartNum,T3.RevisionNum as FSCallDt_RevisionNum,T3.XPartNum as FSCallDt_XPartNum,T3.XRevisionNum as FSCallDt_XRevisionNum,T3.Calc_CProb,T3.Calc_fCallLine,T3.Calc_fCallNum,T3.Calc_InvoiceLine,T3.Calc_InvoiceNum, T4.Calc_InvoiceNum as FSCallMt_Calc_InvoiceNum,T4.Calc_MatNum,T4.Calc_MtPaNum,T4.Calc_MtQty,T4.Calc_MtBillPrice,T4.Calc_MtExtPrice,T4.Calc_MtLinedesc,T4.Calc_MtRevNum,T4.ResReasonCode,T5.RptLanguageID as Label_RptLanguageID,T5.Calc_ActDate  as Label_Calc_ActDate,T5.Calc_CreditMemo as Label_Calc_CreditMemo,T5.Calc_Duration as Label_Calc_Duration,T5.Calc_JobNumber as Label_Calc_JobNumber,T5.Calc_LabDur as Label_Calc_LabDur,T5.Calc_Labor as Label_Calc_Labor,T5.Calc_MatDur as Label_Calc_MatDur,T5.RptLiteralsLMaterial as Label_Calc_Mate,T5.Calc_Misc as Label_Calc_Misc,T5.Calc_MiscDur as Label_Calc_MiscDur,T5.Calc_MtExtPrice as Label_Calc_MtExtPrice,T5.Calc_SerialNumber as Label_Calc_SerialNumber,T5.DepositCredit as Label_DepositCredit,T5.DocUnitPrice as Label_DocUnitPrice,T5.InvoiceLine as Label_InvoiceLine,T5.PONum as Label_PONum,T5.ProbReasonCode as Label_ProbReasonCode,T5.Reference as Label_Reference,T5.RptLiteralsLBckOrd,T5.RptLiteralsLBillTo ,T5.RptLiteralsLComeFrom ,T5.RptLiteralsLContinueInNext ,T5.RptLiteralsLCusPart ,T5.RptLiteralsLDate ,T5.RptLiteralsLEMaila ,T5.RptLiteralsLExtPrice ,T5.RptLiteralsLFax ,T5.RptLiteralsLFOB ,T5.RptLiteralsLHdng ,T5.RptLiteralsLInvoice ,T5.RptLiteralsLLegNum ,T5.RptLiteralsLLine ,T5.RptLiteralsLLineRef ,T5.RptLiteralsLof ,T5.RptLiteralsLOurPart ,T5.RptLiteralsLPackSlp ,T5.RptLiteralsLPage ,T5.RptLiteralsLPartDesc ,T5.RptLiteralsLPartRev  ,T5.RptLiteralsLPhone ,T5.RptLiteralsLPONum ,T5.RptLiteralsLQty ,T5.RptLiteralsLQtyOrd ,T5.RptLiteralsLRev ,T5.RptLiteralsLRounding ,T5.RptLiteralsLSalesKit ,T5.RptLiteralsLSeeBelow ,T5.RptLiteralsLShipTo ,T5.RptLiteralsLShpVia ,T5.RptLiteralsLSlsTxID ,T5.RptLiteralsLSoldToL ,T5.RptLiteralsLTotal ,T5.RptLiteralsLWarrantyA ,T5.RptLiteralsLWHCode ,T5.ShipDate as Label_ShipDate,T5.UnitPrice as Label_UnitPrice,T5.RptLiteralsLAUHdng ,T5.RptLiteralsLAUTxID ,T5.RptLiteralsLSEOCR ,T5.RptLiteralsLTHServiceTax ,T5.RptLiteralsLTHCopy ,T5.RptLiteralsLNOKID ,T5.RptLiteralsLDiscountPercent ,T5.RptLiteralsLVatNr ,T5.RptLiteralsLTHBranch ,T5.RptLiteralsLTHBranchID ,T5.RptLiteralsLTHHeadOffice ,T5.RptLiteralsLTHTaxPayerNo, T5.RptLiteralsLlessAdvBill
           FROM InvcHead_" + Parameters!TableGuid.Value + " T1
           LEFT OUTER JOIN InvcDtl_" + Parameters!TableGuid.Value + " T2
           ON T1.Company = T2.Company AND T1.InvoiceNum = T2.InvoiceNum
@@ -907,6 +907,10 @@
           <DataField>Customer_OrgRegCode</DataField>
           <rd:UserDefined>true</rd:UserDefined>
         </Field>
+        <Field Name="PackNum_ShipComment">
+          <DataField>PackNum_ShipComment</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
       </Fields>
     </DataSet>
     <DataSet Name="Company">
@@ -976,7 +980,7 @@
     <DataSet Name="PerCont">
       <Query>
         <DataSourceName>DsARForm</DataSourceName>
-        <CommandText>="Select  T1.PrimPCon,  T2.PerConID, T2.ConNum,T3.PhoneNum, T3.EMailAddress,  T3.Name FROM Customer_" + Parameters!TableGuid.Value +" T1 
+        <CommandText>="Select  T1.CustNum, T1.PrimPCon,  T2.PerConID, T2.ConNum,T3.PhoneNum, T3.EMailAddress,  T3.Name FROM Customer_" + Parameters!TableGuid.Value +" T1 
 LEFT OUTER JOIN CustCnt_" + Parameters!TableGuid.Value + "  T2 ON
  T1.PrimPCon = T2.ConNum AND T1.CustNum = T2.CustNum 
 LEFT OUTER JOIN PerCon_" + Parameters!TableGuid.Value + " T3  
@@ -1027,6 +1031,10 @@ LEFT OUTER JOIN PerCon_" + Parameters!TableGuid.Value + " T3
         </Field>
         <Field Name="ConNum">
           <DataField>ConNum</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+        <Field Name="CustNum">
+          <DataField>CustNum</DataField>
           <rd:UserDefined>true</rd:UserDefined>
         </Field>
       </Fields>
@@ -2168,9 +2176,9 @@ LEFT OUTER JOIN PerCon_" + Parameters!TableGuid.Value + " T3
                                   <TextRuns>
                                     <TextRun>
                                       <Label>PurcContact</Label>
-                                      <Value>="Contact: " + VBTab + Lookup(Fields!Customer_PrimPcon.Value, Fields!ConNum.Value, Fields!Name.Value, "PerCont") + VBCrLf + Lookup("","","Email:   "+VBTab +VBTab + Fields!EMailAddress.Value, "PerCont") + VBCrLf
+                                      <Value>="Contact: " + VBTab + Lookup(Fields!CustNum.Value + Fields!Customer_PrimPcon.Value, Fields!CustNum.Value+Fields!ConNum.Value, Fields!Name.Value, "PerCont") + VBCrLf + Lookup(Fields!CustNum.Value,Fields!CustNum.Value,"Email:   "+VBTab +VBTab + Fields!EMailAddress.Value, "PerCont") + VBCrLf
 
- +LOOKUP("","","Tel:      " + VBTab +VBTab + VBTab + Fields!PhoneNum.Value, "PerCont")</Value>
+ +LOOKUP(Fields!CustNum.Value,Fields!CustNum.Value ,"Tel:      " + VBTab +VBTab + VBTab + Fields!PhoneNum.Value, "PerCont")</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -2196,7 +2204,7 @@ LEFT OUTER JOIN PerCon_" + Parameters!TableGuid.Value + " T3
                                   <TextRuns>
                                     <TextRun>
                                       <Label>EORI_No</Label>
-                                      <Value>="EORI No.:" + Fields!Customer_FederalID.value + VBCRLf + "VAT: " +  Fields!Customer_OrgRegCode.value</Value>
+                                      <Value>="EORI No.:" + Fields!Customer_FederalID.value + VBCRLf + "VAT: " + Fields!Calc_CustResaleID.Value '--&gt;Fields!Customer_OrgRegCode.value</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
@@ -2271,7 +2279,7 @@ LEFT OUTER JOIN PerCon_" + Parameters!TableGuid.Value + " T3
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.205in</Height>
+                  <Height>0.17in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3370,7 +3378,7 @@ iif(Split(Fields!Calc_LineSoldToAddressList.Value, "~")(5).ToString() &lt;&gt; "
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Lookup(Fields!InvoiceNum.Value+Fields!InvoiceLine.Value, Fields!InvoiceNum.Value+Fields!InvoiceLine.Value, RIGHT(Fields!Calc_TaxDesc.Value,3), "InvcTax")</Value>
+                                      <Value>=Lookup(cstr(Fields!InvoiceNum.Value)+cstr(Fields!InvoiceLine.Value), cstr(Fields!InvoiceNum.Value)+cstr(Fields!InvoiceLine.Value), RIGHT(Fields!Calc_TaxDesc.Value,3), "InvcTax")</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
                                       </Style>
@@ -3408,7 +3416,7 @@ iif(Split(Fields!Calc_LineSoldToAddressList.Value, "~")(5).ToString() &lt;&gt; "
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.1948in</Height>
+                  <Height>0.21167in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3464,7 +3472,7 @@ Switch(Fields!Calc_CustPartOpts.Value = "N", Fields!PartNum_PartDescription.Valu
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.0248in</Top>
+                              <Top>0.04167in</Top>
                               <Left>7.07806in</Left>
                               <Height>0.17in</Height>
                               <Width>0.29102in</Width>
@@ -3493,7 +3501,7 @@ Switch(Fields!Calc_CustPartOpts.Value = "N", Fields!PartNum_PartDescription.Valu
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
-                              <Top>0.0248in</Top>
+                              <Top>0.04167in</Top>
                               <Left>7.39686in</Left>
                               <Height>0.17in</Height>
                               <Width>0.26731in</Width>
@@ -3533,6 +3541,7 @@ Switch(Fields!Calc_CustPartOpts.Value = "N", Fields!PartNum_PartDescription.Valu
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
+                              <Top>0.01687in</Top>
                               <Left>4.09549in</Left>
                               <Height>0.17in</Height>
                               <Width>0.63999in</Width>
@@ -3566,6 +3575,7 @@ Switch(Fields!Calc_CustPartOpts.Value = "N", Fields!PartNum_PartDescription.Valu
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
+                              <Top>0.01687in</Top>
                               <Left>4.78445in</Left>
                               <Height>0.17in</Height>
                               <Width>1.73956in</Width>
@@ -3591,6 +3601,7 @@ Switch(Fields!Calc_CustPartOpts.Value = "N", Fields!PartNum_PartDescription.Valu
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
+                              <Top>0.01687in</Top>
                               <Left>6.56845in</Left>
                               <Height>0.17in</Height>
                               <Width>0.45388in</Width>
@@ -3771,7 +3782,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                               </Paragraphs>
                               <Left>0.02771in</Left>
                               <Height>0.17in</Height>
-                              <Width>1.31923in</Width>
+                              <Width>0.58278in</Width>
                               <ZIndex>4</ZIndex>
                               <Visibility>
                                 <Hidden>=Fields!OrderLine_KitsLoaded.Value = true</Hidden>
@@ -4123,7 +4134,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.16022in</Height>
+                  <Height>0.03125in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -5229,7 +5240,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.23497in</Height>
+                  <Height>0.19097in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -6082,7 +6093,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.13659in</Height>
+                  <Height>0.08103in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -6106,7 +6117,6 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                                       <Value>=Fields!InvoiceLine.Value</Value>
                                     </Parameter>
                                   </Parameters>
-                                  <Top>0.05556in</Top>
                                   <Left>0.02194in</Left>
                                   <Height>0.08103in</Height>
                                   <Width>6.91354in</Width>
@@ -6119,7 +6129,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
                               <Left>0.295in</Left>
-                              <Height>0.13659in</Height>
+                              <Height>0.08103in</Height>
                               <Width>7.00548in</Width>
                               <Visibility>
                                 <Hidden>=isnothing(Fields!Calc_InvcComment.Value)</Hidden>
@@ -7124,7 +7134,7 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.03125in</Height>
+                  <Height>0.0625in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -7157,46 +7167,15 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                             </Subreport>
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
+                          <Visibility>
+                            <Hidden>true</Hidden>
+                          </Visibility>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
                           </Style>
                         </Rectangle>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.03125in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox64">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox64</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -7283,7 +7262,7 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>0.20548in</Height>
+                  <Height>0.19549in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -7299,7 +7278,6 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                                       <Value>=Replace(Fields!InvoiceComment.Value,CHR(13),VbCrLf)</Value>
                                       <Style>
                                         <FontStyle>Italic</FontStyle>
-                                        <FontFamily>Arial Unicode MS</FontFamily>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -7321,6 +7299,50 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                                   <Width>0.25pt</Width>
                                 </TopBorder>
                                 <BackgroundColor>White</BackgroundColor>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.27083in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle30">
+                          <ReportItems>
+                            <Textbox Name="PackNum_ShipComments">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!PackNum_ShipComment.Value</Value>
+                                      <Style />
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>PackNum_ShipComments</rd:DefaultName>
+                              <Top>0.05208in</Top>
+                              <Left>0.21805in</Left>
+                              <Height>0.15625in</Height>
+                              <Width>7.32445in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
                               </Style>
                             </Textbox>
                           </ReportItems>
@@ -8680,7 +8702,7 @@ iif(iif(LTRIM(Fields!XPartNum.Value)="", Fields!Calc_LineDesc.Value,
                                     </TablixMember>
                                     <TablixMember>
                                       <Visibility>
-                                        <Hidden>=(Fields!OrderLine_KitsLoaded.Value = true and UCase(Fields!OrderLine_KitFlag.Value) = "C") 
+                                        <Hidden>=LEN(TRIM(ReportItems!TxtInvoiceLine.value)) = 0  '--&gt;=(Fields!OrderLine_KitsLoaded.Value = true and UCase(Fields!OrderLine_KitFlag.Value) = "C") 
 or 
 (Fields!Calc_InvoiceDisplayLine.Value = Fields!InvoiceLine.Value 
 and Fields!OrderLine_KitsLoaded.Value = false and Fields!DocDiscount.Value = 0)</Hidden>
@@ -8922,11 +8944,6 @@ and Fields!Calc_MatDur.Value = 0 and Fields!Calc_LabDur.Value = 0 and Fields!Cal
                             </TablixMember>
                           </TablixMembers>
                         </TablixMember>
-                        <TablixMember>
-                          <Visibility>
-                            <Hidden>true</Hidden>
-                          </Visibility>
-                        </TablixMember>
                       </TablixMembers>
                     </TablixMember>
                     <TablixMember>
@@ -8939,6 +8956,7 @@ and Fields!Calc_MatDur.Value = 0 and Fields!Calc_LabDur.Value = 0 and Fields!Cal
                         <Hidden>=LTRIM(Fields!InvoiceComment.Value)=""</Hidden>
                       </Visibility>
                     </TablixMember>
+                    <TablixMember />
                     <TablixMember />
                     <TablixMember />
                     <TablixMember />
@@ -8971,7 +8989,7 @@ and Fields!Calc_MatDur.Value = 0 and Fields!Calc_LabDur.Value = 0 and Fields!Cal
             <DataSetName>ARForm</DataSetName>
             <Top>0.06943in</Top>
             <Left>0.14764in</Left>
-            <Height>16.39912in</Height>
+            <Height>16.4133in</Height>
             <Width>7.96569in</Width>
             <Style>
               <Border>
@@ -8981,7 +8999,7 @@ and Fields!Calc_MatDur.Value = 0 and Fields!Calc_LabDur.Value = 0 and Fields!Cal
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>16.59355in</Height>
+        <Height>16.82272in</Height>
         <Style />
       </Body>
       <Width>8.11333in</Width>
