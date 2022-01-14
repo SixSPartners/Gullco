@@ -71569,6 +71569,20 @@
   <RptLinkField>
     <RptDefID>ARForm_EUR</RptDefID>
     <RptTableID>InvcDtl</RptTableID>
+    <RptLinkID>PackNum</RptLinkID>
+    <SystemCode>ERP</SystemCode>
+    <ZDataTableID>InvcDtl</ZDataTableID>
+    <ZLookupID>PackNum</ZLookupID>
+    <FieldName>ShipComment</FieldName>
+    <SystemFlag>false</SystemFlag>
+    <SysRevID>260276993</SysRevID>
+    <SysRowID>d7e6df32-edb6-46f2-8d5b-d0fc3fbaefa7</SysRowID>
+    <BitFlag>0</BitFlag>
+    <RowMod />
+  </RptLinkField>
+  <RptLinkField>
+    <RptDefID>ARForm_EUR</RptDefID>
+    <RptTableID>InvcDtl</RptTableID>
     <RptLinkID>PartNum</RptLinkID>
     <SystemCode>ERP</SystemCode>
     <ZDataTableID>InvcDtl</ZDataTableID>
@@ -75001,9 +75015,9 @@
   <RptLiterals>
     <RptDefID>ARForm_EUR</RptDefID>
     <LiteralName>LOurPart</LiteralName>
-    <LiteralValue>Our Part</LiteralValue>
+    <LiteralValue>Part</LiteralValue>
     <SystemFlag>false</SystemFlag>
-    <SysRevID>250026629</SysRevID>
+    <SysRevID>260249995</SysRevID>
     <SysRowID>38d44e69-5a7f-438c-ae6f-02898908e632</SysRowID>
     <BitFlag>0</BitFlag>
     <RowMod />
