@@ -3864,7 +3864,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                                   </Style>
                                 </Paragraph>
                               </Paragraphs>
-                              <Left>1.09694in</Left>
+                              <Left>1.08083in</Left>
                               <Height>0.17in</Height>
                               <Width>0.94in</Width>
                               <ZIndex>1</ZIndex>
@@ -3879,11 +3879,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=iif(Fields!SellingOrderQty.Value = Fields!SellingShipQty.Value
-	, ""
-	, iif(Fields!SellingOrderQty.Value &lt;&gt; 0
-		,Fields!SalesUM.Value
-		,""))</Value>
+                                      <Value>=Fields!Calc_mulponum.Value</Value>
                                       <Style>
                                         <FontFamily>Arial Unicode MS</FontFamily>
                                         <FontSize>9pt</FontSize>
@@ -5339,7 +5335,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                                       <Value>=Fields!PartNum_NetWeight.Value</Value>
                                       <Style>
                                         <FontSize>9pt</FontSize>
-                                        <Format>#,0.00;(#,0.00)</Format>
+                                        <Format>#,0.000;(#,0.000)</Format>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -6013,6 +6009,7 @@ iif(UCase(Fields!OrderLine_KitFlag.Value) = "P", Fields!RptLiteralsLSalesKit.Val
                             </Border>
                           </Style>
                         </Rectangle>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -7327,7 +7324,7 @@ iif(split(Fields!Calc_BottomAddress.Value, "~")(5).ToString() &lt;&gt; "",
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!PackNum_ShipComment.Value</Value>
+                                      <Value>=Replace(Fields!PackNum_ShipComment.Value,CHR(13),VbCrLf)</Value>
                                       <Style />
                                     </TextRun>
                                   </TextRuns>
